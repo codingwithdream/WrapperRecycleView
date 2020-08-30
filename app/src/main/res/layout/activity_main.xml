@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/gank_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        app:titleTextColor="@android:color/white"
+        app:title="Gank Camp"/>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/gank_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipChildren="false">
+
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/gank_tab_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_gravity="top"
+            android:overScrollMode="never"
+            app:tabIndicator="@color/colorPrimary"
+            app:tabBackground="@color/colorPrimary"
+            app:tabMinWidth="60dp"
+            app:tabMode="fixed"
+            app:tabSelectedTextColor="@android:color/white"
+            app:tabTextColor="#33ffffff"/>
+
+    </androidx.viewpager.widget.ViewPager>
+
+</LinearLayout>
